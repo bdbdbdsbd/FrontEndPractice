@@ -1,0 +1,218 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+    /* 适应移动端不同像素的情况 */
+    /* 内容宽度 = width-margin-padding-border */
+}
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 26.67vw;
+    width: 100%;
+    /* 这里设置1vw 的大小 */
+    /* 在750宽度的页面中 1vw就是7.5像素 
+    整个页面的基础就是200px 1rem=200px*/
+}
+body{
+    /* 这个font-size 就是 */
+    font-size: 0.08rem;
+    display: flex;
+    flex-direction: column;
+
+}
+/* header */
+.header{
+    /* font-size:16px; */
+    height: 0.49rem;
+    width: 100%;
+    background-color: #d43b33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .mic{
+    width: 0.54rem;
+    align-items: center;
+    color: white;
+    padding-left: 0.15rem;
+}
+.header .mic i{
+    font-size: 0.22rem;
+}
+.header .rank i{
+    font-size: 0.22rem;
+}
+.header .rank{
+    width: 0.54rem;
+    align-items: center;
+    color: white;
+    padding-left: 0.18rem;
+}
+.header .search{
+    flex: 1; /*  占据所有剩余空间 */
+    background-color: white;
+    height: 0.3rem;
+
+}
+.header .search{
+    display: flex;
+    align-items: center;
+    padding-left: 0.47rem;
+    border-radius: 5px;
+    /* align-self: center; */
+    /* align-self 是子元素的 align-items是父元素的*/
+}
+.header .search form{
+    flex: 1;
+    display: flex;
+
+}
+.header .search form i{
+    color: #c8c8c8;
+}
+.header .search form input{
+    outline: none;
+    flex: 1;
+    border: none;
+    /* background: gold; */
+    font-size: 0.14rem;
+    color: #c8c8c8;
+    padding-left: 0.09rem;
+}
+nav{
+    height: 0.4rem;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.12rem;
+}
+nav span{
+    text-decoration: none;
+    color: black;
+    padding: 0 0.06rem;
+    border-bottom: 0.02rem white solid;
+    align-items: center;
+    display: flex;
+    font-size: 0.1rem;
+}
+.content{
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+}
+.content .img{
+    width: 100%;
+    height: 1.39rem;
+}
+.content .img img{
+    width: 100%;
+    height: 100%;
+}
+.content .adContent{
+    display: flex;
+    align-items: center;
+    height: 1.03rem;
+    border-bottom: 1px solid #999;
+}
+.content .adContent dl{
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content .adContent dl dt{
+    height: 0.54rem;
+    width: 0.54rem;
+    color: #d2382c;
+    border-radius: 50%;
+    border: 1px solid #d63934;
+    font-size: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .adContent dl dd{
+    padding-top: 0.07rem;
+    font-size: 0.11rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.content .adContent dl dt:nth-child(2){
+    font-size: 0.35rem;
+}
+.content .musicList{
+    height: 0.45rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.1rem;
+}
+.content .musicList .aside:nth-child(1){
+    padding-top: 0.2rem;
+}
+.content .musicList .aside:nth-child(1) i{
+    font-size: 0.15rem;
+    color: #c04736;
+}
+.content .musicList .aside:nth-child(1) span{
+    font-size: 0.15rem;
+}
+.content .musicList .aside:nth-child(2){
+    padding-top: 0.23rem;
+}
+.content .musicList .aside:nth-child(2) i{
+    font-size: 0.1rem;
+}
+.content .musicList .aside:nth-child(2) span{
+    font-size: 0.1rem;
+}
+.content .picList{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding: 0 0.1rem;
+}
+.content .picList dl{
+    margin: 0;
+    width: 1.14rem;
+}
+.content .picList dl dt{
+    width: 100%;
+}
+.content .picList dl dt img{
+    width: 100%;
+}
+.content .picList dl dd{
+    font-size: 0.12rem;
+    line-height: 0.16rem;
+    margin: 0;
+    padding-top: 0.07rem;
+    padding-bottom: 0.18rem;
+}
+.bottom{
+    height: 0.48rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.27rem;
+}
+.bottom aside{
+    color: #b2a3a0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bottom aside i{
+    font-size: 0.25rem;
+}
+.bottom aside span{
+    font-size: 0.1rem;
+}

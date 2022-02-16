@@ -1,0 +1,155 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: '微软雅黑';
+    width: 100%;
+}
+img{
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 77px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+}
+.header .headerContent{
+    height: 77px;
+    width: 1151px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.header .headerContent a img{
+    width: 217px;
+    height: 45px;
+    margin: 16px 0;
+    /* line-height: 77px; 无用 */
+}
+.header .headerContent .city{
+    margin: 0px 10px 0px 20px;
+    display: flex;
+    align-items: center;
+}
+.header .headerContent .city .icon{
+    /* width: 15px; */
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+.header .headerContent .city  a{
+    font-size: 15px;
+    margin-right: 15px;
+    color: black;
+    text-decoration: none;
+}
+.header .headerContent .city .cityButtom button{
+    background-color: coral;
+    border: none;
+    height: 40px;
+    font-size: 5px;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+}
+.header .headerContent .subPage{
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+}
+.header .headerContent .subPage a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+.header .headerContent .smallIcon{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+.header .headerContent .smallIcon >*{
+    margin-left: 10px;
+}
+.header .headerContent .smallIcon a img{
+    width: 20px;
+    height: 20px;
+}
+.header .headerContent .smallIcon button{
+    background-color: coral;
+    border: none;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+}
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+.content .pic{
+    width: 33.333333%;
+    background-color: #eee2c8;
+}
+.content .pic:nth-child(2){
+    background-color: #ddc69d;
+}
+.content .pic img{
+    width: 100%;
+}
+.content .pic .text{
+    text-align: center;
+    padding-top: 10px;
+}
+.content .pic .text p{
+    /* width: 200px; */
+
+    display: inline;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px 1px #7c7b7b;
+}
+.bottom{
+    background-color: rgb(173, 103, 103);
+    height: 100px;
+    width: 100%;
+}
+.bottom .line1{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom .line1 a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    border-left: 2px solid white;
+    padding-left: 10px;
+}
+.bottom .line1 a:nth-child(1){
+    border: none;
+}
+.bottom .line2{
+    width: 100%;
+    display: flex;
+    color: white;
+    height: 40px;
+    text-align: center;
+    padding: 0 auto;
+}
+.bottom .line2 p{
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+}
